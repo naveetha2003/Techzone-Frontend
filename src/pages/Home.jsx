@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import bann1 from "../assets/bann1.jpeg";
-import laphome from "../assets/laphome.jpeg";
+
 import homelap1 from "../assets/homelap1.jpeg";
 import mouse4 from "../assets/mouse4.jpeg";
 import watch1 from "../assets/watch1.jpeg";
