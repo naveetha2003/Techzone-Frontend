@@ -10,11 +10,13 @@ function Product({ wishlist, setWishlist, cart, setCart,search }) {
   const handleBuyNow = (product)=>{
     navigate("/checkout",{state:product});
   }
+
+  const API=import.meta.env.VITE_API_URL;
   
 
   //  FETCH PRODUCTS
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch(`${API}/api/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
