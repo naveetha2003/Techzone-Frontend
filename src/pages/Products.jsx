@@ -91,7 +91,7 @@ function Product({ wishlist, setWishlist, cart, setCart,search }) {
 
               {/* IMAGE */}
               <img
-                src={p.image ||"images/laptops/laptop1.jpeg"}
+                src={p.image}
                 alt={p.name}
                 className="w-full h-48 object-contain"
               />
