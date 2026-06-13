@@ -16,7 +16,8 @@ function Product({ wishlist, setWishlist, cart, setCart,search }) {
 
   //  FETCH PRODUCTS
   useEffect(() => {
-    fetch(`${API}/api/products`)
+    fetch("https://techzone-backend-3.onrender.com/api/products")
+    
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err))
