@@ -16,10 +16,10 @@ function Product({ wishlist, setWishlist, cart, setCart,search }) {
 
   //  FETCH PRODUCTS
   useEffect(() => {
-    fetch(`${API}/api/products`)
+    fetch("http://localhost:5000/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
   }, []);
 
   const searchResults = products.filter((p) =>
@@ -91,7 +91,7 @@ function Product({ wishlist, setWishlist, cart, setCart,search }) {
 
               {/* IMAGE */}
               <img
-                src={p.image}
+                src={p.image ||"images/laptops/laptop1.jpeg"}
                 alt={p.name}
                 className="w-full h-48 object-contain"
               />
